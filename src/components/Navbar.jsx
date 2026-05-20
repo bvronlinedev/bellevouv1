@@ -13,7 +13,7 @@ const Navbar = () => {
       <nav className="flex items-center justify-between">
         
         {/* Logo Section */}
-        <div className="flex items-center gap-2 text-2xl font-bold tracking-tighter cursor-pointer z-50">
+        <div className="flex items-center justify-center gap-2 text-2xl font-bold tracking-tighter cursor-pointer z-50">
           {/* Logo Asterisk Icon */}
           <div className="bg-black text-white w-7 h-7 rounded-md flex items-center justify-center">
             <Icon width="20" height="16" viewBox="0 0 2048 1566" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
@@ -21,23 +21,25 @@ const Navbar = () => {
             <BrandName width="45%" height="100%" /*viewBox="0 0 1440 612" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"*/ />
         </div>
 
-        {/* Desktop Menu (Hidden on smaller screens) */}
+        {/* Desktop Menu (Hidden on smaller screens) 
         <div className="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-900">
-          <a href="#home" className="hover:text-gray-600 transition">Home</a>
+          <a href="#" className="hover:text-gray-600 transition">Home</a>
           <a href="#about" className="hover:text-gray-600 transition">About</a>
-          <a href="#work" className="hover:text-gray-600 transition">Case Studies</a>
+          <a href="#salons" className="hover:text-gray-600 transition">Salon</a>
           <a href="#blog" className="hover:text-gray-600 transition">Blog</a>
-        </div>
+        </div>*/}
 
         {/* Desktop CTA (Hidden on smaller screens) */}
         <div className="hidden md:block">
+	<a href="#CTA" >
           <button className="bg-black text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-gray-800 transition">
             Book a call
           </button>
+	</a>
         </div>
 
         {/* Mobile Hamburger Toggle Button */}
-        <button 
+        {/*<button 
           className="md:hidden flex flex-col justify-center items-end w-8 h-8 z-50 relative"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
@@ -54,7 +56,7 @@ const Navbar = () => {
               <span className="block h-0.5 w-4/5 ml-auto bg-black rounded-full"></span>
             </div>
           )}
-        </button>
+        </button>*/}
       </nav>
 
       {/* Mobile Dropdown Overlay */}
@@ -65,13 +67,16 @@ const Navbar = () => {
       >
         <a href="#home" className="text-base font-medium text-gray-900 hover:text-gray-600 transition" onClick={closeMenu}>Home</a>
         <a href="#about" className="text-base font-medium text-gray-900 hover:text-gray-600 transition" onClick={closeMenu}>About</a>
-        <a href="#work" className="text-base font-medium text-gray-900 hover:text-gray-600 transition" onClick={closeMenu}>Case Studies</a>
+        <a href="#salons" className="text-base font-medium text-gray-900 hover:text-gray-600 transition" onClick={closeMenu}>Salon</a>
         <a href="#blog" className="text-base font-medium text-gray-900 hover:text-gray-600 transition" onClick={closeMenu}>Blog</a>
-        
-        <div className="pt-4">
+       
+	<div className="pt-4">
+	 
+	<a href="#CTA" >
           <button className="w-full bg-black text-white py-4 rounded-full text-base font-medium hover:bg-gray-800 transition">
             Book a call
           </button>
+	</a>
         </div>
       </div>
     </header>

@@ -1,22 +1,27 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { IconSparkles, IconCrown, IconDna } from '@tabler/icons-react';
+
 
 const Services = () => {
   const services = [
     {
       title: "Instant Transformation",
       desc: "Walk out of the salon with visibly smoother, stronger, humidity-resistant hair that stays consistent - not temporary.",
-      icon: "📸"
+      icon: <IconSparkles stroke={2} style={{ color: '#3C3489' }} />,
+      bgcolor: "#EEEDFE",
     },
     {
       title: "Repair Meets Discipline",
       desc: "Infused with advanced protein restructuring, Thermoforce[+] doesn't just coat your hair - it rebuilds it from within for healthier movement and shine",
-      icon: "📱"
+      icon: <IconDna stroke={2} style={{ color: '#085041' }} />,
+      bgcolor: "#E1F5EE",
     },
     {
       title: "Luxury Results That Endure",
       desc: "Paired with Thermoforce[+] Care Shampoo & Mask, your results stay salon-fresh for longer.",
-      icon: "📣"
+      icon: <IconCrown stroke={2} style={{ color: '#633806' }} />,
+      bgcolor: "#FAEEDA",
     }
   ];
 
@@ -67,7 +72,7 @@ const Services = () => {
             variants={cardVariants}
             className="bg-white p-8 rounded-3xl text-left shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
           >
-            <div className="text-4xl mb-6">{service.icon}</div>
+            <div className="text-4xl w-[48px] h-[48px] rounded-lg flex items-center justify-center mb-6" style={{backgroundColor:service.bgcolor}}>{service.icon}</div>
             <h3 className="text-xl font-bold mb-3">{service.title}</h3>
             <p className="text-gray-600 leading-relaxed">{service.desc}</p>
           </motion.div>

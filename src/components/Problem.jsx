@@ -13,7 +13,7 @@ const Problem = () => {
   };
 
   return (
-    <section className="py-20 px-6 max-w-7xl mx-auto overflow-hidden">
+    <section className="py-12 sm:py-20 px-6 max-w-7xl mx-auto overflow-hidden">
       <motion.div 
         className="bg-white rounded-3xl max-w-[600px] shadow-[0px_0.602187px_3.01094px_rgba(0,0,0,0),0px_2.28853px_11.4427px_rgba(0,0,0,0.01),0px_10px_50px_rgba(0,0,0,0.03) py-15 px-8 max-w-5xl mx-auto text-center"
         initial="hidden"

@@ -10,6 +10,7 @@ import CaseStudies from './components/CaseStudies';
 import Process from './components/Process';
 import Team from './components/Team';
 import FAQ from './components/FAQ';
+import CTA from './components/CTA';
 import Footer from './components/Footer';
 // Import others as you build them: Team, FAQ, CTA, etc.
 
@@ -27,6 +28,7 @@ function App() {
         {/*<Process />
 	<Team />
 	<FAQ />*/}
+	<CTA />
       </main>
       <Footer />
     </div>

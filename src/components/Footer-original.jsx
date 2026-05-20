@@ -43,11 +43,11 @@ const Footer = () => {
         }}
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-16 pt-8 md:pt-16 ">{/*pb-8 pt-14*/}
+      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-16 pt-14 md:pt-16 pb-8">
 
         {/* ── DESKTOP LAYOUT ── */}
         <div className="hidden md:grid md:grid-cols-3 gap-10 lg:gap-16 pb-12"
-          style={{ /*borderBottom: "0.5px solid rgba(232,228,220,0.1)" */}}>
+          style={{ borderBottom: "0.5px solid rgba(232,228,220,0.1)" }}>
 
           {/* Col 1 — Brand */}
           <div>
@@ -64,7 +64,7 @@ const Footer = () => {
             </p>
 
             {/* Cert badges */}
-            {/*<div className="flex flex-wrap gap-2 mt-6">
+            <div className="flex flex-wrap gap-2 mt-6">
               {certs.map((c) => (
                 <div key={c} className="flex items-center gap-1.5 px-3 py-1 rounded-full"
                   style={{ border: "0.5px solid rgba(232,228,220,0.15)", fontSize: "9px", letterSpacing: "0.1em", color: "rgba(232,228,220,0.4)", textTransform: "uppercase" }}>
@@ -72,10 +72,10 @@ const Footer = () => {
                   {c}
                 </div>
               ))}
-            </div>*/}
+            </div>
 
-            {/* Stats 
-            <div className="flex gap-8 pt-7" style={{ borderTop: "0.5px solid rgba(232,228,220,0.08)" }}>
+            {/* Stats */}
+            <div className="flex gap-8 mt-7 pt-7" style={{ borderTop: "0.5px solid rgba(232,228,220,0.08)" }}>
               {stats.map((s) => (
                 <div key={s.label}>
                   <div className="cormorant font-light leading-none" style={{ fontSize: "26px", color: "rgba(232,228,220,0.6)" }}>
@@ -87,12 +87,12 @@ const Footer = () => {
                   </div>
                 </div>
               ))}
-            </div>*/}
+            </div>
           </div>
 
           {/* Col 2 — Nav */}
-          <div className="md:col-span-2">
-            {/*<div className="figtree font-medium mb-5"
+          <div>
+            <div className="figtree font-medium mb-5"
               style={{ fontSize: "9px", letterSpacing: "0.2em", textTransform: "uppercase", color: "rgba(232,228,220,0.28)" }}>
               Navigate
             </div>
@@ -103,17 +103,25 @@ const Footer = () => {
                 {link}
               </a>
             ))}
-            <div className="my-5" style={{ width: "28px", height: "0.5px", background: "rgba(232,228,220,0.15)" }} />*/}
-{/*Moved from column 3*/}
+            <div className="my-5" style={{ width: "28px", height: "0.5px", background: "rgba(232,228,220,0.15)" }} />
+            <a href="#" className="block figtree font-light mb-2.5 nav-link-hover"
+              style={{ fontSize: "11px", color: "rgba(232,228,220,0.28)", textDecoration: "none" }}>
+              Privacy Policy
+            </a>
+            <a href="#" className="block figtree font-light nav-link-hover"
+              style={{ fontSize: "11px", color: "rgba(232,228,220,0.28)", textDecoration: "none" }}>
+              Terms of Use
+            </a>
+          </div>
 
+          {/* Col 3 — Contact */}
+          <div>
             <div className="figtree font-medium mb-5"
               style={{ fontSize: "9px", letterSpacing: "0.2em", textTransform: "uppercase", color: "rgba(232,228,220,0.28)" }}>
               Get in touch
             </div>
-
-	<div className="flex items-center flex-nowrap gap-[24px]" >
             {contacts.map((c, i) => (
-              <div key={c.type} className={i <= contacts.length - 1 ? "mb-4" : ""}>
+              <div key={c.type} className={i < contacts.length - 1 ? "mb-4" : ""}>
                 <div className="figtree font-light mb-1"
                   style={{ fontSize: "9px", letterSpacing: "0.15em", textTransform: "uppercase", color: "rgba(232,228,220,0.28)" }}>
                   {c.type}
@@ -124,53 +132,18 @@ const Footer = () => {
                 </a>
               </div>
             ))}
-	</div>
-
-	            <div className="flex gap-8 pt-7" style={{ borderTop: "0.5px solid rgba(232,228,220,0.08)" }}>
-              {stats.map((s) => (
-                <div key={s.label}>
-                  <div className="cormorant font-light leading-none" style={{ fontSize: "26px", color: "rgba(232,228,220,0.6)" }}>
-                    {s.num}<em style={{ color: "#c8302a", fontStyle: "normal" }}>{s.accent}</em>
-                  </div>
-                  <div className="figtree font-normal mt-1"
-                    style={{ fontSize: "9px", letterSpacing: "0.15em", textTransform: "uppercase", color: "rgba(232,228,220,0.25)" }}>
-                    {s.label}
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="my-5" style={{ width: "100%", height: "0.5px", background: "rgba(232,228,220,0.15)" }} />
+            <div className="my-5" style={{ width: "28px", height: "0.5px", background: "rgba(232,228,220,0.15)" }} />
             <div className="flex items-center gap-2">
-              {/*<div className="w-1 h-1 rounded-full flex-shrink-0" style={{ background: "rgba(232,228,220,0.2)" }} />
-              <span className="figtree font-light" style={{ fontSize: "11px", color: "rgba(232,228,220,0.3)" }}>
+              <div className="w-1 h-1 rounded-full flex-shrink-0" style={{ background: "rgba(232,228,220,0.2)" }} />
+              {/*<span className="figtree font-light" style={{ fontSize: "11px", color: "rgba(232,228,220,0.3)" }}>
                 Mumbai · Delhi · Bangalore · +7 cities
               </span>*/}
-            {/*</div>*/}
-
-
-	<p className="figtree font-light" style={{ fontSize: "10px", color: "rgba(232,228,220,0.2)", letterSpacing: "0.04em" }}>
-            © 2026 Bellevou Research. All rights reserved.
-          </p>
-            <a href="#" className="block figtree font-light nav-link-hover" 
-              style={{ fontSize: "11px", color: "rgba(232,228,220,0.28)", textDecoration: "none" }}>{/* mb-2.5*/}
-              Privacy Policy
-            </a>
-            <a href="#" className="block figtree font-light nav-link-hover"
-              style={{ fontSize: "11px", color: "rgba(232,228,220,0.28)", textDecoration: "none" }}>
-              Terms of Use
-            </a>
-	</div>
+            </div>
           </div>
         </div>
-          </div>
-
-          {/* Col 3 — Contact */}
-          <div>
-{/*Moved from column 3 to column 2*/}
 
         {/* ── MOBILE LAYOUT ── */}
-        <div className="md:hidden pb-8 px-8" style={{ borderBottom: "0.5px solid rgba(232,228,220,0.1)" }}>
+        <div className="md:hidden pb-8" style={{ borderBottom: "0.5px solid rgba(232,228,220,0.1)" }}>
 
           {/* Brand */}
           <div className="mb-6">
@@ -186,7 +159,7 @@ const Footer = () => {
           </div>
 
           {/* Certs */}
-          {/*<div className="flex flex-wrap gap-1.5 mb-6">
+          <div className="flex flex-wrap gap-1.5 mb-6">
             {certs.map((c) => (
               <div key={c} className="flex items-center gap-1.5 px-2.5 py-1 rounded-full"
                 style={{ border: "0.5px solid rgba(232,228,220,0.15)", fontSize: "9px", letterSpacing: "0.1em", color: "rgba(232,228,220,0.4)", textTransform: "uppercase" }}>
@@ -194,7 +167,7 @@ const Footer = () => {
                 {c}
               </div>
             ))}
-          </div>*/}
+          </div>
 
           {/* Stats */}
           <div className="flex justify-between mb-6">
@@ -211,10 +184,10 @@ const Footer = () => {
             ))}
           </div>
 
-          {/*<div style={{ height: "0.5px", background: "rgba(232,228,220,0.1)", marginBottom: "20px" }} />*/}
+          <div style={{ height: "0.5px", background: "rgba(232,228,220,0.1)", marginBottom: "20px" }} />
 
           {/* Nav grid */}
-         {/* <div className="figtree font-medium mb-4"
+          <div className="figtree font-medium mb-4"
             style={{ fontSize: "9px", letterSpacing: "0.2em", textTransform: "uppercase", color: "rgba(232,228,220,0.28)" }}>
             Navigate
           </div>
@@ -225,7 +198,7 @@ const Footer = () => {
                 {link}
               </a>
             ))}
-          </div>*/}
+          </div>
 
           <div style={{ height: "0.5px", background: "rgba(232,228,220,0.1)", marginBottom: "20px" }} />
 
@@ -247,13 +220,13 @@ const Footer = () => {
             </div>
           ))}
 
-          {/* Location 
+          {/* Location */}
           <div className="flex items-center gap-2 mt-4">
             <div className="w-1 h-1 rounded-full flex-shrink-0" style={{ background: "rgba(232,228,220,0.2)" }} />
             <span className="figtree font-light" style={{ fontSize: "11px", color: "rgba(232,228,220,0.3)" }}>
               Mumbai · Delhi · Bangalore · +7 cities
             </span>
-          </div>*/}
+          </div>
 
           <div style={{ height: "0.5px", background: "rgba(232,228,220,0.1)", margin: "20px 0" }} />
 
@@ -269,13 +242,13 @@ const Footer = () => {
         </div>
 
         {/* ── BOTTOM BAR (shared) ── */}
-        <div className="md:hidden pt-6 flex flex-col md:flex-row md:justify-between md:items-center gap-2 text-center md:text-left">
+        <div className="pt-6 flex flex-col md:flex-row md:justify-between md:items-center gap-2 text-center md:text-left">
           <p className="figtree font-light" style={{ fontSize: "10px", color: "rgba(232,228,220,0.2)", letterSpacing: "0.04em" }}>
             © 2026 Bellevou Research. All rights reserved.
           </p>
-          {/*<p className="cormorant font-light" style={{ fontSize: "13px", fontStyle: "italic", color: "rgba(232,228,220,0.18)", letterSpacing: "0.06em" }}>
+          <p className="cormorant font-light" style={{ fontSize: "13px", fontStyle: "italic", color: "rgba(232,228,220,0.18)", letterSpacing: "0.06em" }}>
             Effortless. Fluid. Unstoppable.
-          </p>*/}
+          </p>
         </div>
 
       </div>

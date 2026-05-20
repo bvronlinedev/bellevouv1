@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import React, { useState, useRef, useEffect } from 'react';
+import heroImg from "src/assets/images/hero-section.png";
 
 const Hero = () => {
   // Animation configuration for a smooth, high-end Framer feel
@@ -33,7 +34,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="px-8 pt-12 pb-24 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 min-h-[85vh]">
+    <section className="px-8 pt-12 pb-12 sm:pb-24 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 min-h-[85vh]">
       
       {/* Left Content Column */}
       <motion.div 
@@ -53,7 +54,7 @@ const Hero = () => {
         {/*</motion.div>*/}
 
         {/* Main Heading */}
-        <motion.h1 variants={itemVariants} className="text-7xl md:text-[3.5rem] font-bold leading-[1.05] tracking-tight text-gray-900">
+        <motion.h1 variants={itemVariants} className="text-5xl md:text-[3.5rem] font-bold leading-[1.05] tracking-tight text-gray-900">
           Hair That Behaves Like You Have Always Wanted -<br /> <span className="font-accent font-normal tracking-normal">Effortless, Fluid, Unstoppable</span>
         </motion.h1>
 
@@ -64,9 +65,11 @@ const Hero = () => {
 
         {/* CTA Button */}
         <motion.div variants={itemVariants}>
+		<a href="#CTA" >
           <button className="bg-black text-white px-8 py-4 rounded-full font-medium text-lg hover:scale-105 hover:bg-gray-800 transition-all duration-300 shadow-lg">
             Get in touch
           </button>
+	</a>
         </motion.div>
       </motion.div>
       
@@ -78,7 +81,12 @@ const Hero = () => {
         initial="hidden"
         animate="visible"
       >
-        <StoryPlayer />
+        {/*<StoryPlayer />*/}
+	 <img 
+            src={heroImg}/*"https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?auto=format&fit=crop&q=80&w=800"*/ 
+            alt="Model" 
+            className="rounded-[2.5rem] shadow-2xl w-full h-[600px] object-cover"
+          />
       </motion.div>
     </section>
   );

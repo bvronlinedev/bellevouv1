@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import salonImg from "src/assets/images/salon-section.png";
+import salonImg from "src/assets/images/salon-section.jpg";
 
 const CaseStudies = () => {
   const textVariants = {
@@ -23,7 +23,7 @@ const CaseStudies = () => {
   };
 
   return (
-    <section className="py-20 px-6 max-w-7xl mx-auto overflow-hidden" id="work">
+    <section className="py-12 sm:py-20 px-6 max-w-7xl mx-auto overflow-hidden" id="salons">
       {/* Case Study 1 */}
       <div className="flex flex-col lg:flex-row items-center gap-12 mb-6">
         <motion.div 
@@ -33,8 +33,8 @@ const CaseStudies = () => {
           viewport={{ once: true, amount: 0.3 }}
           variants={textVariants}
         >
-          <div className="text-sm font-semibold tracking-widest uppercase text-gray-500 mb-4">For Salons</div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight"><span className="font-accent font-normal">Elevate</span> your<br/>salon offering</h2>
+          <div className="text-sm text-center font-semibold tracking-widest uppercase text-gray-500 mb-4">For Salons</div>
+          <h2 className="text-3xl text-center md:text-4xl font-bold mb-6 tracking-tight"><span className="font-accent font-normal">Elevate</span> your<br/>salon offering</h2>
           <p className="text-gray-600 mb-8 text-lg">
             Offer your clients more than just a service — deliver a signature experience. With <span className="text-gray-900 font-bold">
               Thermoforce<span className="text-red-600 tracking-[-0.09em]">[+]</span></span>, you get high-demand, premium treatment positioning, faster application with express results, and a maintenance system designed to keep clients coming back. Trusted across 200+ salons in 10 cities, with over 10,000 treatments performed in just 4 years. Partner with <span className="text-gray-900 font-bold">Bellevou Research</span> and bring next-generation hair transformation to your salon..
@@ -61,8 +61,8 @@ const CaseStudies = () => {
           <img 
             src={salonImg}/*"https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?auto=format&fit=crop&q=80&w=800"*/ 
             alt="Model" 
-            className="rounded-[2.5rem] shadow-2xl w-full h-[500px] object-cover"
-          />
+            className="rounded-[2.5rem] shadow-2xl w-full object-cover"
+          /> {/*h-[500px]*/}
         </motion.div>
       </div>
     </section>
