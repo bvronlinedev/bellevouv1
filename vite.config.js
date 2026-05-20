@@ -22,5 +22,5 @@ export default defineConfig({
       lib: "/src/lib",
     },
   },
-  base: "/bellevouv1"
+  base: "/bellevouv1/"
 })
