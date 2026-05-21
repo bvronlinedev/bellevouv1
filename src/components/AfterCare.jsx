@@ -1,5 +1,5 @@
 import React from 'react';
-import Icon from "src/assets/bv-icon.svg?react";
+import Icon from "@assets/bv-icon.svg?react";
 import { motion } from 'framer-motion';
 
 const AfterCare = () => {

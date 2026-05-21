@@ -1,5 +1,5 @@
 import React from 'react';
-import Qrcode from "src/assets/qrcode-svg.svg?react";
+import Qrcode from "@assets/qrcode-svg.svg?react";
 
 const CTA = () => {
   return (

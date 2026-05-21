@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Icon from "src/assets/bv-icon.svg?react";
-import BrandName from "src/assets/bellevou-research-svg.svg?react";
+import Icon from "@assets/bv-icon.svg?react";
+import BrandName from "@assets/bellevou-research-svg.svg?react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
