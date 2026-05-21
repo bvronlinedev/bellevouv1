@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import React, { useState, useRef, useEffect } from 'react';
-import heroImg from "../assets/images/hero-section.png";
+import heroImg from "@assets/images/hero-section.png";
 
 const Hero = () => {
   // Animation configuration for a smooth, high-end Framer feel
